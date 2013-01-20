@@ -1,0 +1,22 @@
+Työselostusta:
+
+Binäärikeko:
+Kolmas implementaatio koko keosta, pyritty suorittamaan kohtuullisen pienellä viittausten pyörittelyllä, toteuttaa kaikki keon perustoiminnut paitsi mergeä (en nähnyt tarpeelliseksi toteuttaa koska O(n) aikavaatimus). Kohtuullisen yksinkertainen tehtävä, metodi .print(HeapNode root, int syvyys) palauttaa kohtuullisen hyvän esityksen keosta testausta varten
+
+Binomikeko:
+Huomattavasti vaativampi rakenne, vei muutaman illan pohdintaa ennenkuin olin tyytyväinen toteutukseen. Toteuttaa Introduction to Algorithms II edition listaamat toiminnot, eli:
+
+Insert, Minimum, Union(jota varten Link ja Merge), ExtractMin, DecreaseKey, Delete
+
+Huomiota: Käyttää exceptionia tyhjän keon käsittelyyn, suunniteltu erillinen toString() esitys käyttöä ja toinen testejä varten.
+
+FibonacciKeko:
+Huomattavasti vaativampi tehtävä, erityisesti huolehtiminen siitä, että kaikki linkit ja liitännät menevät oikeaan suuntaan. Rivi koodissa jossa listaan lisätään oikealle, eikä vasemmalle aiheutti tuntien päänsäryn kun vertasi omaa tulostusta internet applettien animaatioihin. Toteuttaa kaikki Introduction To Algorithms Second Editionin toiminnot, mukaanlukien Pisano-Delete, jonka lisäsin innostuttuani kirjan tehtäviin.
+Toiminnut
+
+Insert, Minumum, Union, Link, Consolidate, ExtractMin, Cut, CascadeCut, DecreaseKey, Delete ja PisanoDelete
+
+Huomiota: Keko ei välttämättä ole kaikissa tilanteissa konsistentti sen järjestyksen kanssa, mitä esimerkiksi http://www.cse.yorku.ca/~aaw/Jason/FibonacciHeapAnimation.html antaa tuloksina, tämä toki siksi, että juurisolmujen listan läpikäynti alkaa ohjelmassa aina juurisolmusta. Käyttää vastaavaa toString() esitystä kuin BinomialHeap, mutta listaa tarkistuksia varten myös vasemman ja oikean solmun arvot.
+
+
+Kaikki keot toimivat yksinkertaisella key-value periaatteella, niihin voi kohtuullisen pienellä vaivalla implementoida datakenttiä myöhemmin, jos tarve ilmenee.
